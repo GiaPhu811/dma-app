@@ -50,7 +50,7 @@ class BigCalendarFull extends React.PureComponent {
       const { start, end } = this.state.selectedTimeSlot;
       const startTime = moment(start).format('YYYY-MM-DDTHH:mm:ss');
       const endTime = moment(end).format('YYYY-MM-DDTHH:mm:ss');
-      historyPush(`content-edit/new?start=${startTime}&end=${endTime}`);
+      historyPush(`/content-edit/new?start=${startTime}&end=${endTime}`);
     }
   };
 
